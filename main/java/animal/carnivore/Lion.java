@@ -3,7 +3,7 @@ import animal.*;
 
 public class Lion implements Animal{
 
-//
+
 	private String name;
 	private String type = "Lion";
 
@@ -11,12 +11,12 @@ public class Lion implements Animal{
 		this.name = name;
 	}
 
-//
+
 	public String getName() {
 		return this.name;
 	}
 
-//
+
 	public String getType() {
 		return this.type;
 	}

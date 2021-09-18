@@ -37,7 +37,7 @@ public class main {
                 System.out.println("" + thisAnimal.getName() + " is a " + thisAnimal.getType());
             }
             fileWriter.close();
-            System.out.println("Successfully outputted to file!\n" + outputFile.getAbsolutePath());
+            System.out.println("Output successful\n" + outputFile.getAbsolutePath());
         }
         
         catch(Exception e) {

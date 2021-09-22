@@ -10,7 +10,7 @@ import animal.herbivore.*;
 
 public class Main {
 
-    private static File namesFile = new File("names.txt");
+    private static File inputFile = new File("names.txt");
     private static File outputFile = new File("output.txt");
     private static Scanner fileReader;
     private static BufferedWriter fileWriter;
@@ -42,13 +42,13 @@ public class Main {
         } 
         
         catch (Exception e) {
-            System.out.println("Error!");
+            System.out.println("Error #1!");
     		}
     }
 
     public static void createAnimal(String animal) {
         try {
-            fileReader = new Scanner(namesFile);
+            fileReader = new Scanner(inputFile);
             if(animal.equalsIgnoreCase("Giraffe")) {
                 for(int i = input; i > 0; i--) {
                     animalList.add(new Giraffe(fileReader.nextLine()));
@@ -63,7 +63,7 @@ public class Main {
         }
         
         catch(Exception e) {
-            System.out.println("Error!");
+            System.out.println("Error! #2");
         }
     }
 }

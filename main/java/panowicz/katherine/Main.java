@@ -42,7 +42,7 @@ public class Main {
         } 
         
         catch (Exception e) {
-            System.out.println("Error #1!");
+            System.out.println("Error! #1");
     		}
     }
 
@@ -52,17 +52,17 @@ public class Main {
             if(animal.equalsIgnoreCase("Giraffe")) {
                 for(int i = input; i > 0; i--) {
                     animalList.add(new Giraffe(fileReader.nextLine()));
-                }
+                	}
             }
             else if(animal.equalsIgnoreCase("Lion")) {
                 for(int i = input; i > 0; i--) {
                     animalList.add(new Lion(fileReader.nextLine()));
-                }
+                	}
             }
             fileReader.close();
         }
         
-        catch(Exception e) {
+        catch (Exception e) {
             System.out.println("Error! #2");
         }
     }
